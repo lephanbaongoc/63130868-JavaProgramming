@@ -8,7 +8,7 @@ public class Bai4 {
 		
 		//Nhập hệ số của phương trình bậc 2
 		Scanner s = new Scanner(System.in);
-		System.out.println("Nhập hệ số của PTB2 ax^2 + bx = c");
+		System.out.println("Nhập hệ số của PTB2 ax^2 + bx + c = 0");
 		System.out.print("Nhập a: ");
 		float a = s.nextFloat();
 		System.out.print("Nhập b: ");
