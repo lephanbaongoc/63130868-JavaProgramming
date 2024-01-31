@@ -24,7 +24,7 @@ public class Bai4 {
 		//In ds sv và điểm
 		System.out.println("\nDANH SÁCH SINH VIÊN:");
 		for(int i=0;i<n;i++) {
-			System.out.printf("%s: %.3f --> ",Name[i], Score[i]);
+			System.out.printf("%s: %.2f --> ",Name[i], Score[i]);
 			//Xét học lực
 			if(Score[i]<5) System.out.print("Học lực yếu\n");
 			else if(Score[i]>=5 && Score[i]<6.5) System.out.print("Học lực trung bình\n");
@@ -49,7 +49,7 @@ public class Bai4 {
 		//In ds sv và điểm
 		System.out.println("\nDANH SÁCH SINH VIÊN SAU KHI SẮP XẾP THEO THỨ TỰ TĂNG DẦN:");
 		for(int i=0;i<n;i++) {
-			System.out.printf("%s: %.3f --> ",Name[i], Score[i]);
+			System.out.printf("%s: %.2f --> ",Name[i], Score[i]);
 			//Xét học lực
 			if(Score[i]<5) System.out.print("Học lực yếu\n");
 			else if(Score[i]>=5 && Score[i]<6.5) System.out.print("Học lực trung bình\n");
