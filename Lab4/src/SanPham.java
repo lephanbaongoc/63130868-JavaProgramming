@@ -1,13 +1,22 @@
+import java.util.Scanner;
 
 public class SanPham {
-	String TenSp;
-	double donGia, giamGia;
+	private String TenSp;
+	private double donGia, giamGia;
+	
+	public SanPham() {
+		
+	}
 	
 	public SanPham(String TenSp, double donGia, double giamGia) {
 		this.TenSp = TenSp;
 		this.donGia = donGia;
 		this.giamGia = giamGia;
 	}
+	
+	public SanPham(String TenSp, double donGia){
+		this(TenSp, donGia, 0);
+		}
 	
 	public double getThueNhapKhau() {
 		return donGia*0.1;
@@ -19,13 +28,13 @@ public class SanPham {
 				"Thuế nhập khẩu: " + getThueNhapKhau());
 	}
 	public void Nhap() {
+		Scanner s = new Scanner(System.in);
 		System.out.print("Nhập Tên sản phẩm: ");
+		TenSp = s.next();
 		System.out.print("Nhập đơn giá sản phẩm: ");
+		donGia = s.nextDouble();
 		System.out.print("Nhập giảm giá sản phẩm: ");
-	}
-	
-	public static void main(String[] args) {
-		
+		giamGia = s.nextDouble();
 	}
 	
 	public String getTenSp() {return TenSp;}
