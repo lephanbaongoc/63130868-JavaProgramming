@@ -38,11 +38,14 @@ public class Bai4 {
 		String temp_;
 		
 		for(int i=0;i<n-1;i++) {
-			if(Score[i]>Score[i+1]) {
-				temp = Score[i];		temp_ = Name[i];
-				Score[i] = Score[i+1];	Name[i] = Name[i+1];
-				Score[i+1] = temp;		Name[i+1] = temp_;
+			for(int j=i+1;j<n;j++) {
+				if(Score[i]>Score[i+1]) {
+					temp = Score[i];		temp_ = Name[i];
+					Score[i] = Score[j];	Name[i] = Name[j];
+					Score[j] = temp;		Name[j] = temp_;
+				}
 			}
+			
 		}
 		
 

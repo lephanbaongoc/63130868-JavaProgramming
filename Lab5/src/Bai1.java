@@ -23,8 +23,8 @@ public class Bai1 {
 			}
 		}
 		
+		System.out.print("\nDANH SÁCH CÁC SỐ THỰC:\n");
 		for(Double x : ls){
-			System.out.print("\nDANH SÁCH CÁC SỐ THỰC:\n");
 			System.out.println(x);
 			S += x;
 		}
