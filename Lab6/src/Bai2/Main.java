@@ -20,6 +20,12 @@ public class Main {
 		for(var sp : ls) {
 			sp.xuat();
 		}
+		
+		//Duyệt danh sách in ra các sản phẩm của hãng Nokia
+		System.out.print("\nDanh sách sản phẩm của hãng Nokia:\n");
+		for(var sp : ls) {
+			if(sp.hang.matches("Nokia")) sp.xuat();
+		}
 	}
 
 }
